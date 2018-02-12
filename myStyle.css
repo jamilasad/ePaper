@@ -1,0 +1,48 @@
+.select {
+	visibility: hidden;
+	position: absolute;
+	border: 2px dotted red;
+	z-index: 110;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	position: relative;
+}
+
+#imgDiv {
+	display: inline-block;
+	position: relative;
+	background-color: rgb(41, 40, 40);
+	padding: 30px;
+}
+
+.imgPortion{
+	opacity: 0.7;
+	position: absolute;
+	z-index: 100;
+}
+.imgPortion:hover{
+	box-shadow: 3px 2px 16px 0 rgba(0,0,0,1);
+	border-radius: 3px;
+	z-index: 110!important;
+}
+.imgPortion-clicked{
+	opacity: 0.8!important;
+}
+#closeBtn{
+	float:right;
+	height: 20px;
+	margin-bottom: 5px;
+}
+#canvasDiv{
+	background-color: #181313;
+	border: 1px solid white;
+	position:absolute;
+	left: 50%;
+	top:50%;
+	padding: 5px 15px 15px 15px;
+	display:none;
+	z-index: 120;
+}
